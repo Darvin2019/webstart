@@ -12,17 +12,18 @@
     display: flex
     flex-direction: column
     font-size: 13px
-    font-weight: 400
+    +light
     color: $text-color
   &__button
     margin-left: 30px
+    +bold
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
-    font-weight: 400
     text-decoration: none
     margin-top: 10px
+    +bold
 @media (max-width: 962px)
   .navbar
     &__button
@@ -49,7 +50,7 @@
       margin-right: 23px
       margin-top: 19px
       font-size: 10px
-      font-weight: 400
+      +bold
       padding-bottom: 25px
     &__logo
       margin-left: 5px
