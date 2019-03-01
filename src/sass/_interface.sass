@@ -1,7 +1,7 @@
+*
+  box-sizing: border-box
 body
  +light
-img 
-  max-width: 100%
 .container 
   width: 1170px
   margin: auto
@@ -19,11 +19,28 @@ img
 .button
   background-color: $main-color
   border: none
-  width: 170px
-  height: 49px
-  border-radius: 10px
-  font-size: 13px
+  outline: none
   +bold
-
+  &:hover 
+    cursor: pointer
+    background-color: darken($main-color, 2%)
+.section
+  padding: 90px 0
+  &-title 
+    font-size: 24px
+    +bold
+    color: $text-color
+  &-subtitle
+    font-size: 16px
+    color: $text-color 
+    display: block
+.input
+  border-radius: 10px
+  border: 1px solid $border-input
+  padding: 20px 26px
+  color: $input-text
+  +light
+  font-size: 15px
+  line-height: 24px
     
    

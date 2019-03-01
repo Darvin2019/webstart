@@ -4,6 +4,9 @@
     display: flex
     justify-content: space-between
     align-items: center
+  &__logo 
+    width: 155px
+    height: 75px
   &__info
     display: flex
     align-items: center
@@ -16,13 +19,17 @@
     color: $text-color
   &__button
     margin-left: 30px
+    width: 170px
+    height: 49px
+    border-radius: 10px
+    font-size: 13px
     +bold
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
     text-decoration: none
-    margin-top: 10px
+    margin-top: 7px
     +bold
 @media (max-width: 962px)
   .navbar

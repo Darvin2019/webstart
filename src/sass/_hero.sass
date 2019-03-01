@@ -1,49 +1,51 @@
 .hero
   padding: 50px 0
+  background: $hero-color
   &-block 
     display: flex 
+    justify-content: space-between
   &-text 
     flex-basis: 50%
-    padding-right: 140px
     &__title
       font-size: 41px
       font-weight: 400
       line-height: 55px
-      margin-bottom: 40px
+      margin-bottom: 37px
+      color: $text-color
       +bold
     &__subtitle 
       display: inline-block
       font-size: 20px
       +bold
       margin-bottom: 70px
+      color: $text-color
   &-list 
     margin: 0
     padding: 0
     &__item 
       display: flex
       align-items: center
-      margin-bottom: 44px
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
     &__img 
-      flex-basis: 40px
-      height: 40px
+      flex-basis: 36px
+      height: 36px
       border: 2px solid $main-color
       display: flex
       align-items: center
       justify-content: center
       border-radius: 50%
       margin-right: 30px
-    &__img-3
-      padding: 0 2px
-      flex-basis: 40px
-      height: 40px
-      border: 2px solid $main-color
-      display: flex
-      align-items: center
-      justify-content: center
-      border-radius: 50%
-      margin-right: 30px
-    &-text 
+    &__text 
       min-width: 300px
+      font-size: 14px
+      line-height: 24px
+      +light
+      color: $text-color
+    &-img 
+      width: 570px
+      height: 488px
 @media (max-width: 1200px)
   .hero 
     &-block 
