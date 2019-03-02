@@ -18,7 +18,7 @@
   &__title
     max-width: 360px
     line-height: 35px
-    margin-bottom: 24px
+    margin-bottom: 20px
   &__subtitle
     max-width: 250px
     margin-bottom: 30px
@@ -27,6 +27,9 @@
     width: 240px
     &:first-child 
       margin-right: 10px
+    &:focus
+      border: 1px solid #ffb366
+      outline: none
   &__button 
     width: 100%
     border-radius: 10px
@@ -34,8 +37,13 @@
     border-radius: 10px
   &-feedback
     display: flex
-    justify-content: center
-    margin-top: 31px
+    justify-content: space-between
+    padding-top: 27px
+  &__manager  
+    width: 47%
+  &-phone
+    width: 40%
+    line-height: 24px
   &__span
     font-size: 15px
     line-height: 24px
@@ -55,10 +63,22 @@
       margin-bottom: 10px
     &__button
       font-size: 13px
+@media (max-width: 970px)
+  .offer
+    background: #fff
+    &-block
+      margin: 0 auto
 @media (max-width: 768px)
   .offer
     background: #fff
     &-block
       width: 100%
       padding-right: 0
+@media (max-width: 420px)
+  .offer
+    &__manager
+      width: 50%
+    &-phone 
+      width: 50%
+
 

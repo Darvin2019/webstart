@@ -189,8 +189,7 @@ body {
   .navbar__button {
     background-color: #ffd200;
     border: none;
-    width: 137px;
-    height: 39px;
+    width: 60%;
     border-radius: 5px;
     margin-right: 23px;
     margin-top: 19px;
@@ -202,8 +201,7 @@ body {
   .navbar__logo {
     margin-left: 5px;
     margin-top: 17px;
-    width: 91px;
-    height: 44px;
+    width: 40%;
   }
 }
 
@@ -358,7 +356,7 @@ body {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .offer__subtitle {
@@ -375,6 +373,11 @@ body {
   margin-right: 10px;
 }
 
+.offer__input:focus {
+  border: 1px solid #ffb366;
+  outline: none;
+}
+
 .offer__button {
   width: 100%;
   border-radius: 10px;
@@ -386,10 +389,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 31px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 27px;
+}
+
+.offer__manager {
+  width: 47%;
+}
+
+.offer-phone {
+  width: 40%;
+  line-height: 24px;
 }
 
 .offer__span {
@@ -420,6 +432,15 @@ body {
   }
 }
 
+@media (max-width: 970px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .offer {
     background: #fff;
@@ -428,5 +449,46 @@ body {
     width: 100%;
     padding-right: 0;
   }
+}
+
+@media (max-width: 420px) {
+  .offer__manager {
+    width: 50%;
+  }
+  .offer-phone {
+    width: 50%;
+  }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
