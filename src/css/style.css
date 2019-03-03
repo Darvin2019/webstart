@@ -163,45 +163,26 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 962px) {
-  .navbar__button {
-    margin-right: 30px;
-  }
-  .navbar__logo {
-    margin-left: 30px;
-  }
-}
-
 @media (max-width: 768px) {
   .navbar__contacts {
     display: none;
   }
   .navbar__button {
-    font-size: 13px;
-    padding: 15px 26px;
+    margin: 0;
   }
-  .navbar__logo {
-    width: 90px;
+  .navbar__logoImg {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 420px) {
   .navbar__button {
-    background-color: #ffd200;
-    border: none;
-    width: 60%;
+    width: 137px;
+    height: 39px;
     border-radius: 5px;
-    margin-right: 23px;
-    margin-top: 19px;
     font-size: 10px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
-    padding-bottom: 25px;
-  }
-  .navbar__logo {
-    margin-left: 5px;
-    margin-top: 17px;
-    width: 40%;
   }
 }
 
@@ -289,9 +270,9 @@ body {
   color: #333333;
 }
 
-.hero-list-img {
-  width: 570px;
-  height: 488px;
+.hero-img__boxshadow {
+  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1200px) {
@@ -382,6 +363,12 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .hero-list {
+    margin: auto;
+  }
+}
+
 .offer {
   background: url("../img/offer/interior.png") no-repeat;
   background-position: center right;
@@ -406,13 +393,11 @@ body {
 }
 
 .offer__title {
-  max-width: 360px;
   line-height: 35px;
   margin-bottom: 20px;
 }
 
 .offer__subtitle {
-  max-width: 250px;
   margin-bottom: 30px;
 }
 
@@ -448,11 +433,10 @@ body {
 }
 
 .offer__manager {
-  width: 47%;
+  margin-bottom: 10px;
 }
 
 .offer-phone {
-  width: 40%;
   line-height: 24px;
 }
 
@@ -475,6 +459,9 @@ body {
   .offer {
     background-size: cover;
   }
+  .offer-block {
+    padding-right: 60px;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
@@ -483,11 +470,21 @@ body {
     font-size: 13px;
   }
   .offer-feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 }
 
 @media (max-width: 970px) {
+  .section {
+    padding: 50px 0;
+  }
   .offer {
     background: #fff;
   }
@@ -507,7 +504,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
+    padding: 0;
   }
 }
 
@@ -527,6 +525,15 @@ body {
   }
   .offer-phone {
     width: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer-feedback {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 

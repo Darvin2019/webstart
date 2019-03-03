@@ -16,11 +16,9 @@
     padding-right: 90px
     position: relative
   &__title
-    max-width: 360px
     line-height: 35px
     margin-bottom: 20px
   &__subtitle
-    max-width: 250px
     margin-bottom: 30px
   &__input 
     margin-bottom: 30px
@@ -39,10 +37,9 @@
     display: flex
     justify-content: space-between
     padding-top: 27px
-  &__manager  
-    width: 47%
+  &__manager
+    margin-bottom: 10px
   &-phone
-    width: 40%
     line-height: 24px
   &__span
     font-size: 15px
@@ -58,14 +55,20 @@
 @media (max-width: 1200px)
   .offer
     background-size: cover
+    &-block
+      padding-right: 60px
     &__input
       width: 100%
       margin-bottom: 10px
     &__button
       font-size: 13px
     &-feedback
+      display: flex
+      flex-direction: column
       text-align: center
 @media (max-width: 970px)
+  .section
+    padding: 50px 0
   .offer
     background: #fff
     &__title
@@ -76,7 +79,8 @@
       flex-direction: column
       align-items: center
       margin: 0 auto
-      width: 60%
+      width: 80%
+      padding: 0
 @media (max-width: 768px)
   .offer
     background: #fff
@@ -89,5 +93,9 @@
       width: 50%
     &-phone 
       width: 50%
+@media (max-width: 320px)
+  .offer 
+    &-feedback
+      flex-direction: row
 
 

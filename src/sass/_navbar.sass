@@ -31,35 +31,23 @@
     text-decoration: none
     margin-top: 7px
     +bold
-@media (max-width: 962px)
-  .navbar
-    &__button
-      margin-right: 30px
-    &__logo
-      margin-left: 30px
 @media (max-width: 768px)
   .navbar
     &__contacts
       display: none
     &__button
-      font-size: 13px
-      padding: 15px 26px
-    &__logo
-      width: 90px
+      margin: 0
+    &__logoImg
+      max-width: 100%
 @media (max-width: 420px)
   .navbar
     &__button
-      background-color: $main-color
-      border: none
-      width: 60%
+      width: 137px
+      height: 39px
       border-radius: 5px
-      margin-right: 23px
-      margin-top: 19px
       font-size: 10px
       +bold
-      padding-bottom: 25px
-    &__logo
-      margin-left: 5px
-      margin-top: 17px
-      width: 40%  
+@media (max-width: 320px)
+  .navbar
+
 
