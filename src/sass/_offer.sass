@@ -18,6 +18,7 @@
   &__title
     line-height: 35px
     margin-bottom: 20px
+    text-align: left
   &__subtitle
     margin-bottom: 30px
   &__input 
@@ -45,6 +46,7 @@
     font-size: 15px
     line-height: 24px
     color: $text-color
+    +light
   &__link
     display: inline-block
     text-decoration: none
@@ -68,7 +70,7 @@
       text-align: center
 @media (max-width: 970px)
   .section
-    padding: 50px 0
+    padding: 53px 0
   .offer
     background: #fff
     &__title
@@ -96,6 +98,35 @@
 @media (max-width: 320px)
   .offer 
     &-feedback
-      flex-direction: row
+      display: inline-block
+      text-align: start
+      padding-top: 21px
+      margin-left: 5px
+    &__manager
+      display: inline-block
+      width: 80%
+      font-size: 15px
+      line-height: 24px
+      margin-bottom: 7px
+    &-phone
+      display: inline-block
+      width: 95%
+    &__title
+      width: 95%
+      margin-right: 15px
+      margin-bottom: 19px
+      font-size: 18px
+      text-align: start
+      line-height: normal
+
+    &__subtitle
+      font-size: 14px
+    &__button
+      width: 95%
+      font-size: 14px
+      line-height: 18px
+    &__input
+      width: 95%
+      padding: 19px 21px
 
 

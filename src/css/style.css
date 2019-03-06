@@ -37,6 +37,10 @@ body {
   margin: auto;
 }
 
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -79,6 +83,7 @@ body {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   color: #333333;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -112,11 +117,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.navbar__logo {
-  width: 155px;
-  height: 75px;
 }
 
 .navbar__info {
@@ -186,6 +186,12 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .navbar__button {
+    margin-left: 49px;
+  }
+}
+
 .hero {
   padding: 50px 0;
   background: #f5f5f5;
@@ -244,9 +250,9 @@ body {
 }
 
 .hero-list__img {
-  -ms-flex-preferred-size: 36px;
-      flex-basis: 36px;
-  height: 36px;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  height: 40px;
   border: 2px solid #ffd200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,7 +268,6 @@ body {
 }
 
 .hero-list__text {
-  min-width: 300px;
   font-size: 14px;
   line-height: 24px;
   font-family: 'Museo Sans Light', sans-serif;
@@ -364,8 +369,31 @@ body {
 }
 
 @media (max-width: 320px) {
+  .hero {
+    padding: 10px 0 50px 0;
+  }
   .hero-list {
-    margin: auto;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .hero-img__width {
+    width: 94%;
+  }
+  .hero-text__title {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 35px;
+    margin-left: 22px;
+    margin-bottom: 10px;
+    line-height: normal;
+  }
+  .hero-text__subtitle {
+    width: 90%;
+    font-size: 16px;
   }
 }
 
@@ -395,6 +423,7 @@ body {
 .offer__title {
   line-height: 35px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -444,6 +473,8 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #333333;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 .offer__link {
@@ -483,7 +514,7 @@ body {
 
 @media (max-width: 970px) {
   .section {
-    padding: 50px 0;
+    padding: 53px 0;
   }
   .offer {
     background: #fff;
@@ -530,10 +561,41 @@ body {
 
 @media (max-width: 320px) {
   .offer-feedback {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: inline-block;
+    text-align: start;
+    padding-top: 21px;
+    margin-left: 5px;
+  }
+  .offer__manager {
+    display: inline-block;
+    width: 80%;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  .offer-phone {
+    display: inline-block;
+    width: 95%;
+  }
+  .offer__title {
+    width: 95%;
+    margin-right: 15px;
+    margin-bottom: 19px;
+    font-size: 18px;
+    text-align: start;
+    line-height: normal;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
+  .offer__button {
+    width: 95%;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .offer__input {
+    width: 95%;
+    padding: 19px 21px;
   }
 }
 
@@ -567,5 +629,179 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  margin: auto;
+  margin-bottom: 99px;
+  font-size: 30px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 320px) {
+  .portfolio {
+    padding: 41px 0;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    margin-bottom: 41px;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
+}
+
+.price__title {
+  max-width: 500px;
+  margin: auto;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 58px;
+  margin-top: 100px;
+}
+
+.price__subtitle {
+  margin-bottom: 59px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+.card__text {
+  padding: 40px;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__link {
+  display: inline-block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.card__link:after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  z-index: -1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 830px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .card__title {
+    margin: 30px 0 15px 0;
+    font-size: 14px;
+  }
+  .card__link {
+    font-size: 16px;
+  }
+  .card__width {
+    max-width: 100%;
+  }
+  .price__title {
+    font-size: 18px;
+    width: 242px;
+    line-height: 25px;
+    padding-top: 52px;
+    margin-bottom: 27px;
+  }
+  .price__subtitle {
+    font-size: 14px;
+    margin-bottom: 61px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
