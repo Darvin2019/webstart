@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,YAAO,CAAC;EACN,OAAO,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/steps.sass"
+    ],
+    "names": [],
+    "file": "steps.css"
+}
