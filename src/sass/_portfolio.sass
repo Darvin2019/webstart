@@ -5,6 +5,7 @@
     margin: auto
     margin-bottom: 99px
     font-size: 30px
+    line-height: 45px
   &__arrows
     max-width: 120px
     margin: auto
@@ -16,12 +17,23 @@
     margin: auto
     outline: none
     border: none
+    max-width: 100%
+@media (max-width: 830px)
+  .slider
+    &__left 
+      margin-left: 10px
+@media (max-width: 808px)
+  .slider
+    &__left 
+      margin-left: 30px
+
 @media (max-width: 320px)
   .portfolio
     padding: 41px 0
     &__title
       font-size: 18px
       margin-bottom: 41px
+      line-height: 20px
     &__arrows
       margin-top: 46px
 

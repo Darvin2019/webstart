@@ -640,6 +640,7 @@ body {
   margin: auto;
   margin-bottom: 99px;
   font-size: 30px;
+  line-height: 45px;
 }
 
 .portfolio__arrows {
@@ -658,6 +659,19 @@ body {
   margin: auto;
   outline: none;
   border: none;
+  max-width: 100%;
+}
+
+@media (max-width: 830px) {
+  .slider__left {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 808px) {
+  .slider__left {
+    margin-left: 30px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -667,6 +681,7 @@ body {
   .portfolio__title {
     font-size: 18px;
     margin-bottom: 41px;
+    line-height: 20px;
   }
   .portfolio__arrows {
     margin-top: 46px;
@@ -924,11 +939,12 @@ body {
     font-size: 18px;
     width: 100%;
     line-height: 20px;
-    margin-top: 55px;
+    margin-top: 14px;
     margin-bottom: 27px;
   }
   .steps__subtitle {
     margin-bottom: 34px;
+    font-size: 14px;
   }
   .step__image {
     margin-bottom: 22px;
