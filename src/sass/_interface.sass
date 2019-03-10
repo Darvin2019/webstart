@@ -9,6 +9,14 @@ body
   &__left, &__right
     &:hover
       cursor: pointer
+.button
+  background-color: $main-color
+  border: none
+  outline: none
+  +bold
+  &:hover 
+    cursor: pointer
+    background-color: darken($main-color, 2%)
 
 @media (max-width: 1200px)
   .container
@@ -18,9 +26,12 @@ body
     max-width: 750px
     width: 90%
 @media (max-width: 768px)
-  .container
-    max-width: 580px
-    width: 90%
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
+@media (max-width: 320px)
+  .container 
+    width: 100%
 .button
   background-color: $main-color
   border: none
