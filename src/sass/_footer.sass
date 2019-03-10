@@ -1,0 +1,53 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  width: 50%
+.contacts
+  flex-basis: 50%
+  padding-top: 100px
+  padding-left: 215px
+  &__title 
+    +bold 
+    font-style: 22px
+    line-height: 1.4
+    margin-bottom: 100px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list
+    padding: 0
+    list-style: none 
+    &__icon 
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+      margin-right: 23px
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 39px
+    &__text
+      font-size: 16px
+    &__bold
+      +bold
+    &__phone
+      text-decoration: none
+      color: $steps-color
+      +bold
+@media (max-width: 320px)
+  .map  
+    position: static
+    width: 100%
+  .contacts
+    flex-basis: 100%
+    padding-top: 67px
+    padding-left: 23px
+    &__title
+      width: 240px
+      font-size: 18px
+      margin-bottom: 39px
+  .footer
+    display: flex
+    flex-direction: column-reverse
