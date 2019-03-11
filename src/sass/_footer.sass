@@ -36,6 +36,30 @@
       text-decoration: none
       color: $steps-color
       +bold
+@media (max-width: 920px)
+  .map
+    width: 100%
+    position: static
+  .contacts
+    flex-basis: 100%
+    padding: 0
+    &__title
+      margin: 50px 0
+    &-list
+      display: flex
+      justify-content: space-around
+@media (max-width: 900px)
+  .footer
+    display: flex
+    flex-direction: column-reverse
+@media (max-width: 576px)
+  .contacts
+    &-list
+      flex-direction: column
+@media (max-width: 478px)
+  .contacts
+    &-list
+      flex-direction: column
 @media (max-width: 320px)
   .map  
     position: static
@@ -48,6 +72,7 @@
       width: 240px
       font-size: 18px
       margin-bottom: 39px
+      margin-top: 0
   .footer
     display: flex
     flex-direction: column-reverse
