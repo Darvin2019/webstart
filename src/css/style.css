@@ -699,10 +699,13 @@ input {
   right: 0;
   border: none;
   padding: 5px 10px;
+  outline: none;
+  background-color: #ffd200;
 }
 
 .modal-dialog__close:hover {
   background: #ffd200;
+  cursor: pointer;
 }
 
 .portfolio {
