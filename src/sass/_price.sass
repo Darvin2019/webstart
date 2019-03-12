@@ -1,6 +1,6 @@
 .price
   &__title
-    max-width: 500px
+    max-width: 520px
     margin: auto
     font-size: 30px
     line-height: 45px
@@ -62,6 +62,11 @@
       z-index: -1
       transition: 0.2s
 @media (max-width: 830px)
+  .price
+    &__title
+      font-size: 25px
+    &__card
+      width: min-content
   .cards
     justify-content: center
 @media (max-width: 760px)
@@ -80,7 +85,7 @@
     &__subtitle
       font-size: 14px
     &__card 
-      width: 80%
+      width: 100%
 @media (max-width: 340px)
   .price
     &__title
@@ -95,22 +100,25 @@
 @media (max-width: 320px)
   .card
     &__title
-      margin: 30px 0 15px 0
+      margin-bottom: 14px
       font-size: 14px
     &__link
       font-size: 16px
     &__width
-      max-width: 100%
+      width: 100%
+    &__text
+      padding: 28px
   .price
     &__title
       font-size: 18px
       width: 242px
-      line-height: 25px
+      line-height: 23px
       padding-top: 52px
-      margin-bottom: 27px
+      margin-bottom: 22px
       margin-top: 0
     &__subtitle
       font-size: 14px
       margin-bottom: 61px
+      margin-right: 12px
     &__card
-      width: 77%
+      width: 271px

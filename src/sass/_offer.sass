@@ -53,6 +53,12 @@
     font-size: 15px
     color: $text-color
     +bold
+.username
+  &-error
+    text-align: center
+.phone
+  &-error 
+    text-align: center
 
 @media (max-width: 1200px)
   .offer
@@ -69,10 +75,9 @@
       flex-direction: column
       text-align: center
 @media (max-width: 970px)
-  .section
-    padding: 53px 0
   .offer
     background: #fff
+    padding: 35px 0
     &__title
       font-size: 20px
       text-align: center
@@ -126,6 +131,7 @@
     &__title
       width: 85%
       margin-right: 15px
+      margin-left: 10px
       margin-bottom: 19px
       font-size: 18px
       text-align: start
@@ -133,6 +139,7 @@
     &__subtitle
       font-size: 14px
       width: 89%
+      margin-left: 10px
     &__button
       width: 86%
       font-size: 14px
