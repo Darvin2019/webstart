@@ -1404,6 +1404,12 @@ input {
   }
 }
 
+@media (max-width: 372px) {
+  .form__title {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 358px) {
   .interview__subtitle {
     text-align: center;
