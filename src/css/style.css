@@ -2060,6 +2060,10 @@ input {
   font-weight: 700;
 }
 
+.contacts iframe {
+  width: 100%;
+}
+
 @media (max-width: 920px) {
   .map {
     width: 100%;
