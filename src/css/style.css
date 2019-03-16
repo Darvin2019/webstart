@@ -354,6 +354,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -362,6 +363,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -370,6 +372,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 * {
@@ -851,6 +854,12 @@ input {
   }
   .hero-text__subtitle {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-text__title {
+    font-size: 14px;
   }
 }
 
@@ -1980,7 +1989,7 @@ input {
 }
 
 .footer {
-  position: relative;
+  position: static;
 }
 
 .map {
