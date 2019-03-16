@@ -1,5 +1,5 @@
 .brif
-  background-image: url('../img/brif/brif-color-bg.png'),url('../img/brif/brif-bg.jpg')
+  background-image: url('../img/brif/brif-color-bg.jpg'),url('../img/brif/brif-bg.jpg')
   background-position: left center, center right
   background-size: 50%, cover
   background-repeat: repeat-y, no-repeat
@@ -70,7 +70,7 @@
   &-description
     display: inline-block
 .error
-  display: inline-block
+  display: block
   margin: 0 auto
 @media (max-width: 1200px)
   .brif
@@ -107,11 +107,12 @@
 @media (max-width: 770px)
   .error
     display: block
+
 @media (max-width: 768px)
   .section 
     padding: 30px 0
   .brif
-    background-image: url('../img/brif/brif-color-bg.png'),url('../img/brif/brif-bg.jpg')
+    background-image: url('../img/brif/brif-color-bg.jpg'),url('../img/brif/brif-bg.jpg')
     background-position: top center, center bottom
     background-size: 100% 45%, cover
     background-repeat: repeat-x, no-repeat
@@ -141,15 +142,14 @@
       &__counter
         min-width: 35px
 @media (max-width: 320px)
-  .section
-    padding-bottom: 10px
   .brif
     background-size: 100% 45%, cover
+    padding-bottom: 0
     &-block
       margin-left: 21px
       padding-bottom: 30px
     &__form 
-      margin-top: 65px
+      margin-top: 40px
       padding: 0
       padding-right: 22px
     &__input
@@ -159,10 +159,13 @@
       width: 275px
       border-radius: 10px
       margin-top: 2px
+      margin-bottom: 26px
+      font-size: 14px
     &__interview
       padding: 0
       align-items: flex-start
   .interview
+    padding-bottom: 25px
     &__title
       font-size: 18px
       line-height: 21px
@@ -173,11 +176,13 @@
       width: 60%
       text-align: start
     &-list 
-      margin-top: 37px
+      margin-top: 8px
       &__counter
         margin-right: 10px
       &__text
         max-width: 235px
+      &__small 
+        max-width: 190px
   .form
     &__title
       font-size: 18px
@@ -185,10 +190,12 @@
       line-height: 25.35px
     &__subtitle
       font-size: 14px
+      margin-top: 23px
     &-description
       display: inline-block
       font-size: 14px
       max-width: 135px
       line-height: 24px
+      margin-right: 12px
 
     

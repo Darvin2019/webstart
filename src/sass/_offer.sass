@@ -21,16 +21,16 @@
     text-align: left
   &__subtitle
     margin-bottom: 30px
-  &__input 
-    margin-bottom: 30px
-    width: 240px
+  &__input
+    width: 48%
+    margin-bottom: 10px
     &:first-child 
       margin-right: 10px
     &:focus
       border: 1px solid #ffb366
       outline: none
   &__button 
-    width: 100%
+    width: 99%
     border-radius: 10px
     min-height: 70px
     border-radius: 10px
@@ -53,31 +53,46 @@
     font-size: 15px
     color: $text-color
     +bold
-.username
+#username
   &-error
     text-align: center
-.phone
+    display: block
+#phone
   &-error 
     text-align: center
-
+    display: block
+.invalid
+  width: 100%
 @media (max-width: 1200px)
   .offer
     background-size: cover
-    &-block
-      padding-right: 60px
     &__input
       width: 100%
       margin-bottom: 10px
+    &-block
+      padding-right: 60px
     &__button
       font-size: 13px
+      width: 100%
     &-feedback
       display: flex
       flex-direction: column
+      text-align: center
+  #username
+    &-error
+      text-align: center
+  #phone
+    &-error 
       text-align: center
 @media (max-width: 970px)
   .offer
     background: #fff
     padding: 35px 0
+    &__input
+      width: 600px
+      margin-bottom: 10px
+      &:first-child
+        margin-right: 0
     &__title
       font-size: 20px
       text-align: center
@@ -91,9 +106,19 @@
 @media (max-width: 768px)
   .offer
     background: #fff
+    &__form
+      width: 100%
+    &__input
+      width: 100%
     &-block
       width: 100%
       padding-right: 0
+  .invalid 
+    width: 100%
+@media (max-width: 630px)
+  .offer
+    &__input
+      width: 100%
 @media (max-width: 420px)
   .offer
     &__title
